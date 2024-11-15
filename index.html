@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل بيانات الموظف</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>تسجيل بيانات الموظف</h2>
+        <form id="employeeForm">
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+
+            <label for="employeeId">رقم الموظف:</label>
+            <input type="text" id="employeeId" name="employeeId" placeholder="أدخل رقم الموظف" required>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم الهاتف" required>
+
+            <label for="department">القسم:</label>
+            <select id="department" name="department" required>
+                <option value="">اختر القسم</option>
+                <option value="it">تكنولوجيا المعلومات</option>
+                <option value="hr">الموارد البشرية</option>
+                <option value="finance">المالية</option>
+                <option value="marketing">التسويق</option>
+            </select>
+
+            <label for="birthDate">تاريخ الميلاد:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+            <label for="dateOfJoining">تاريخ الانضمام:</label>
+            <input type="date" id="dateOfJoining" name="dateOfJoining" required>
+
+            <button type="submit">تسجيل</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
